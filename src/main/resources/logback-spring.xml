@@ -23,7 +23,7 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
             <fileNamePattern>
-                /D:/info.%d.log
+                ${LOG_PATH}/${APPDIR}/info.%d.log
             </fileNamePattern>
         </rollingPolicy>
     </appender>
@@ -41,7 +41,7 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
             <fileNamePattern>
-                /D:/error.%d.log
+                ${LOG_PATH}/${APPDIR}/error.%d.log
             </fileNamePattern>
         </rollingPolicy>
     </appender>
