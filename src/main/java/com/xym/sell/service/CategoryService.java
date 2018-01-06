@@ -1,6 +1,6 @@
 package com.xym.sell.service;
 
-import com.xym.sell.dataobject.ProductCategory;
+import com.xym.sell.data.ProductCategory;
 
 import java.util.List;
 

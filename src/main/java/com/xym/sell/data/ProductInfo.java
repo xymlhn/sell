@@ -1,12 +1,10 @@
-package com.xym.sell.dataobject;
+package com.xym.sell.data;
 
 import lombok.Data;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.math.BigDecimal;
-import java.util.Date;
 
 @Entity
 @Data

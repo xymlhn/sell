@@ -10,17 +10,7 @@ import java.util.List;
 public class ProductVo {
 
     @JsonProperty("name")
-    private String productName;
-
-    private BigDecimal productPrice;
-
-    private Integer productStock;
-
-    private String productDescription;
-
-    private String productIcon;
-
-    private Integer productStatus;
+    private String categoryName;
 
     @JsonProperty("type")
     private Integer categoryType;

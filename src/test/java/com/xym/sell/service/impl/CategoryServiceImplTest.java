@@ -1,6 +1,6 @@
 package com.xym.sell.service.impl;
 
-import com.xym.sell.dataobject.ProductCategory;
+import com.xym.sell.data.ProductCategory;
 import com.xym.sell.service.CategoryService;
 import org.junit.Assert;
 import org.junit.Test;

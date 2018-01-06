@@ -1,6 +1,6 @@
 package com.xym.sell.repository;
 
-import com.xym.sell.dataobject.ProductInfo;
+import com.xym.sell.data.ProductInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

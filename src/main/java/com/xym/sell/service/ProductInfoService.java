@@ -1,9 +1,9 @@
 package com.xym.sell.service;
 
-import com.xym.sell.dataobject.ProductInfo;
+import com.xym.sell.data.ProductInfo;
+import com.xym.sell.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -18,7 +18,12 @@ public interface ProductInfoService {
 
     ProductInfo save(ProductInfo productInfo);
 
+    //加库存
+    void increaseStock(List<CartDTO> cartDTOS);
 
+    //减库存
+
+    void decreaseStock(List<CartDTO> cartDTOS);
 
 
 }

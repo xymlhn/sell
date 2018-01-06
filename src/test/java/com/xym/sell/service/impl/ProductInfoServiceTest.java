@@ -1,6 +1,6 @@
 package com.xym.sell.service.impl;
 
-import com.xym.sell.dataobject.ProductInfo;
+import com.xym.sell.data.ProductInfo;
 import com.xym.sell.service.ProductInfoService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,8 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

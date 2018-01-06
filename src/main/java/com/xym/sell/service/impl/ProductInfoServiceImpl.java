@@ -1,14 +1,17 @@
 package com.xym.sell.service.impl;
 
-import com.xym.sell.dataobject.ProductInfo;
+import com.xym.sell.data.ProductInfo;
+import com.xym.sell.dto.CartDTO;
 import com.xym.sell.enums.ProductStatusEnum;
+import com.xym.sell.enums.ResultEnum;
+import com.xym.sell.exception.SellException;
 import com.xym.sell.repository.ProductInfoRepository;
 import com.xym.sell.service.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.awt.print.Pageable;
 import java.util.List;
 @Service
 public class ProductInfoServiceImpl implements ProductInfoService {
@@ -34,5 +37,31 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return repository.save(productInfo);
+    }
+
+    @Override
+    public void increaseStock(List<CartDTO> cartDTOS) {
+
+    }
+
+    @Override
+    @Transactional
+    public void decreaseStock(List<CartDTO> cartDTOS) {
+        for (CartDTO cartDto : cartDTOS) {
+            ProductInfo productInfo = repository.findOne(cartDto.getProductId());
+            if (productInfo == null){
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+
+            Integer number = productInfo.getProductStock() - cartDto.getProductQuantity();
+
+            if (number < 0){
+                throw  new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
+            }else {
+                productInfo.setProductStock(number);
+                repository.save(productInfo);
+            }
+
+        }
     }
 }
