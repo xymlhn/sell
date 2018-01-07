@@ -87,6 +87,6 @@ public class OrderServiceImplTest {
     public void list(){
         PageRequest pageRequest = new PageRequest(0,10);
         Page<OrderDTO> result = orderService.findList(pageRequest);
-        Assert.assertTrue("查询所有的订单列表",result.getTotalElements() < 0);
+        Assert.assertTrue("查询所有的订单列表",result.getTotalElements() > 0);
     }
 }
