@@ -6,5 +6,10 @@ spring:
     url: jdbc:mysql://39.106.101.72:3306/xym?characterEncoding=utf8&useSSL=false
   jpa:
     show-sql: true
+  jackson:
+    default-property-inclusion: non_null
 server:
   context-path: /sell
+
+
+

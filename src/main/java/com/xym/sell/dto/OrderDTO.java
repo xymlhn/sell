@@ -1,9 +1,13 @@
 package com.xym.sell.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.xym.sell.data.OrderDetail;
+import com.xym.sell.utils.serializer.Date2LongSerialzer;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -24,5 +28,10 @@ public class OrderDTO {
 
     private Integer payStatus;
 
-    private List<OrderDetail> orderDetails;
+    @JsonSerialize(using = Date2LongSerialzer.class)
+    private Date createTime;
+    @JsonSerialize(using = Date2LongSerialzer.class)
+    private Date updateTime;
+
+    private List<OrderDetail> orderDetails = new ArrayList<>();
 }
