@@ -5,6 +5,8 @@ import lombok.Getter;
 @Getter
 public enum ResultEnum {
 
+    SUCCESS(0,"成功"),
+
     PARAM_ERROR(1,"订单支付状态不正确"),
 
     PRODUCT_NOT_EXIST(10,"商品不存在"),
@@ -26,6 +28,12 @@ public enum ResultEnum {
     CART_EMPTY(80,"购物车为空"),
 
     ORDER_OWNER_ERROR(90,"该订单不属于当前用户"),
+
+    ORDER_CANCEL_SUCCESS(100,"订单取消成功"),
+
+    ORDER_FINISH_SUCCESS(110,"订单完结成功"),
+
+    PRODUCT_STATUS_ERROR(120,"商品状态不正确"),
 
     ;
 

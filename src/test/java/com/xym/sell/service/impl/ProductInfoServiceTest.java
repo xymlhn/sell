@@ -1,6 +1,7 @@
 package com.xym.sell.service.impl;
 
 import com.xym.sell.data.ProductInfo;
+import com.xym.sell.enums.ProductStatusEnum;
 import com.xym.sell.service.ProductInfoService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -54,4 +55,17 @@ public class ProductInfoServiceTest {
         ProductInfo result = productInfoService.save(productInfo);
         Assert.assertNotNull(result);
     }
+
+    @Test
+    public void onSale(){
+        ProductInfo result = productInfoService.onSale("1");
+        Assert.assertNotEquals(ProductStatusEnum.DOWN,result.getProductStatusEnum());
+    }
+
+    @Test
+    public void offSale(){
+        ProductInfo result = productInfoService.offSale("1");
+        Assert.assertNotEquals(ProductStatusEnum.UP,result.getProductStatusEnum());
+    }
+
 }

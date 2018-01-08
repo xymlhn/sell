@@ -25,5 +25,9 @@ public interface ProductInfoService {
 
     void decreaseStock(List<CartDTO> cartDTOS);
 
+    //上架
+    ProductInfo onSale(String productId);
 
+    //下架
+    ProductInfo offSale(String productId);
 }
