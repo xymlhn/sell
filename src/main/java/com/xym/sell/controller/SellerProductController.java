@@ -1,7 +1,7 @@
 package com.xym.sell.controller;
 
-import com.xym.sell.data.ProductCategory;
-import com.xym.sell.data.ProductInfo;
+import com.xym.sell.DO.ProductCategory;
+import com.xym.sell.DO.ProductInfo;
 import com.xym.sell.exception.SellException;
 import com.xym.sell.form.ProductForm;
 import com.xym.sell.service.CategoryService;

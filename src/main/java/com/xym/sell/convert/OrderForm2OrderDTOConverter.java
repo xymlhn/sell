@@ -2,12 +2,11 @@ package com.xym.sell.convert;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.xym.sell.data.OrderDetail;
+import com.xym.sell.DO.OrderDetail;
 import com.xym.sell.dto.OrderDTO;
 import com.xym.sell.enums.ResultEnum;
 import com.xym.sell.exception.SellException;
 import com.xym.sell.form.OrderForm;
-import com.xym.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;

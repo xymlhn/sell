@@ -1,6 +1,6 @@
 package com.xym.sell.repository;
 
-import com.xym.sell.data.OrderMaster;
+import com.xym.sell.DO.OrderMaster;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

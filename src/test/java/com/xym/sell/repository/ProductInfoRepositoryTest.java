@@ -1,6 +1,6 @@
 package com.xym.sell.repository;
 
-import com.xym.sell.data.ProductInfo;
+import com.xym.sell.DO.ProductInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,6 +1,6 @@
 package com.xym.sell.service;
 
-import com.xym.sell.data.ProductInfo;
+import com.xym.sell.DO.ProductInfo;
 import com.xym.sell.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

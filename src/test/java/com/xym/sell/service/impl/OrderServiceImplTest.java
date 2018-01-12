@@ -1,6 +1,6 @@
 package com.xym.sell.service.impl;
 
-import com.xym.sell.data.OrderDetail;
+import com.xym.sell.DO.OrderDetail;
 import com.xym.sell.dto.OrderDTO;
 import com.xym.sell.enums.OrderStatusEnum;
 import com.xym.sell.enums.PayStatusEnum;

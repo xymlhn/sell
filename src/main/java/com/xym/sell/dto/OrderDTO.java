@@ -2,7 +2,7 @@ package com.xym.sell.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.xym.sell.data.OrderDetail;
+import com.xym.sell.DO.OrderDetail;
 import com.xym.sell.enums.OrderStatusEnum;
 import com.xym.sell.enums.PayStatusEnum;
 import com.xym.sell.utils.EnumUtil;

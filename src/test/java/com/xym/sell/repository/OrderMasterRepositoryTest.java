@@ -1,6 +1,6 @@
 package com.xym.sell.repository;
 
-import com.xym.sell.data.OrderMaster;
+import com.xym.sell.DO.OrderMaster;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

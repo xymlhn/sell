@@ -1,4 +1,4 @@
-package com.xym.sell.data;
+package com.xym.sell.DO;
 
 import com.xym.sell.enums.OrderStatusEnum;
 import com.xym.sell.enums.PayStatusEnum;

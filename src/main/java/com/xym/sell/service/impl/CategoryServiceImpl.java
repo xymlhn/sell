@@ -1,6 +1,6 @@
 package com.xym.sell.service.impl;
 
-import com.xym.sell.data.ProductCategory;
+import com.xym.sell.DO.ProductCategory;
 import com.xym.sell.repository.ProductCategoryRepository;
 import com.xym.sell.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;

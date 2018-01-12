@@ -1,4 +1,4 @@
-package com.xym.sell.data;
+package com.xym.sell.DO;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.xym.sell.enums.ProductStatusEnum;

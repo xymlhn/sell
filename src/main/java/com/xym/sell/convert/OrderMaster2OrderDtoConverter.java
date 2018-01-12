@@ -1,6 +1,6 @@
 package com.xym.sell.convert;
 
-import com.xym.sell.data.OrderMaster;
+import com.xym.sell.DO.OrderMaster;
 import com.xym.sell.dto.OrderDTO;
 import org.springframework.beans.BeanUtils;
 

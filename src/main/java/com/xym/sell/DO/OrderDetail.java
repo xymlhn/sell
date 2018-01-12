@@ -1,4 +1,4 @@
-package com.xym.sell.data;
+package com.xym.sell.DO;
 
 import lombok.Data;
 

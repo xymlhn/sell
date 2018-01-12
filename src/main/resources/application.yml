@@ -8,8 +8,24 @@ spring:
     show-sql: true
   jackson:
     default-property-inclusion: non_null
+  redis:
+      host: 39.106.101.72
+      port: 6379
+      timeout: 300000
+      pool:
+        max-wait: -1
+        min-idle: 8
+        max-idle: 100
+        max-active: 1000
+      password: foobared
+
 server:
   context-path: /sell
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
 
 
 

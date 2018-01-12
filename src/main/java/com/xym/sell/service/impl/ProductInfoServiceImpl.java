@@ -1,6 +1,6 @@
 package com.xym.sell.service.impl;
 
-import com.xym.sell.data.ProductInfo;
+import com.xym.sell.DO.ProductInfo;
 import com.xym.sell.dto.CartDTO;
 import com.xym.sell.enums.ProductStatusEnum;
 import com.xym.sell.enums.ResultEnum;
