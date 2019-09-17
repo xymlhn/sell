@@ -37,6 +37,7 @@ public class BuyerOrderController {
     //创建订单
     @PostMapping("/create")
     public ResultVo <Map<String,String>> create(@Valid OrderForm orderForm, BindingResult bindingResult){
+        log.error("[创建订单] 参数不正确，orderFor11m = {}",orderForm);
                     log.error("[创建订单] 参数不正确，orderForm = {}",orderForm);
         if (bindingResult.hasErrors()){
             log.error("[创建订单] 参数不正确，orderForm = {}",orderForm);
